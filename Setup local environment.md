@@ -1,0 +1,4 @@
+--> To setup react project we can use two things : create-react-app or vite
+--> here , we are going to use vite (vite.dev)
+--> to create type : npm create vite@latest
+--> to start server : npm run dev.
