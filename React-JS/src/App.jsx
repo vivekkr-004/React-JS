@@ -1,16 +1,13 @@
 
 import './App.css'
-// creating component
+// import Title from './Title'
+import {Title,Navbar} from "./Title.jsx" // named import
 
-function Title() {
-  return <h1>Hi, I am the Title!</h1>
-}
 
 function Description() {
   return <h3>I am the description !</h3>
 }
 
-// to render in app component we use either write this -> <Title></Title> or <Title/>
 function App() {
 
   return (
@@ -20,7 +17,7 @@ function App() {
     <Title/>
     <Description/>
     <Title/>
-    <Description/>
+    <Navbar></Navbar>
   </div>
   )
     
