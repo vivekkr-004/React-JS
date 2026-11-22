@@ -10,7 +10,6 @@ function App() {
   return (
   <>
    <ProductTab></ProductTab>
-   <ProductTab></ProductTab>
    
   </>
  
