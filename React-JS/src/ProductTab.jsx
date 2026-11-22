@@ -4,7 +4,7 @@ function ProductTab() {
         <>
             <Product title = "Laptop" price = {30000} ></Product>
             <Product title = "Mobile" price = {40000} ></Product>
-            <Product title = "TV" price = {50000} ></Product>
+            <Product title = "TV"  ></Product>
         </>
     );
 }

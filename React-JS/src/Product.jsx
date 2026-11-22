@@ -1,7 +1,7 @@
 import "./Product.css"
 // props is the object
 // function Product (props) {
-function Product ({title , price}) { // using destructuring -> more easy way
+function Product ({title , price = 1}) { // using destructuring -> more easy way
     // console.log(props); 
     return (
         <div className="Product">
