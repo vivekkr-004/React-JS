@@ -1,18 +1,23 @@
 import Product from "./Product";
 function ProductTab() {
 
+    let styles = {
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent : "center",
+        alignItem: "center",
+        
+    }
 
     return (
-        <>
-            <Product title = "Laptop" price = {30000} ></Product>
-            <Product title = "Mobile" price = {40000} ></Product>
-            <Product title = "TV" price={1}   ></Product>
-        </>
+        <div style = {styles}>
+            <Product title = "Logitech MX Master" index = {0} ></Product>
+            <Product title = "Apple Pencile (2nd Gen)"  index = {1} ></Product>
+            <Product title = "Zebronics Zeb-transformer"  index = {2} ></Product>
+            <Product title = "Petronics Toad 23"  index = {3} ></Product>
+        </div>
     );
 }
 
 export default ProductTab;
 
-// React props -> we pass data to parent component and child component recieve and display it.
-// --> it works like a js function argument
-// --> it makes components dynamic and reusable. 

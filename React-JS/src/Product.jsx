@@ -1,13 +1,20 @@
 import "./Product.css"
-// props is the object
-// function Product (props) {
-function Product({ title, price }) {
-    let styles = { backgroundColor : price > 30000 ? "peru" : "" };
+import Price from "./Price";
+function Product({title , index}) {
+    let oldPrices = ["12,495" , "11,900" , "1,599" , "599"];
+    let newPrices = ["8,999" , "9,199" , "899" , "278"];
+    let description = [
+        ["8,000 DPI" , "5 Programmable buttons"],
+        ["intuitive surface" , "designed for iPad Pro"],
+        ["designed for iPad Pro" , "intuitive surface"],
+        ["wireless", "optical orientation"], 
+    ];
     return (
-        <div className="Product" style = {styles}>
-            <h3>{title}</h3>
-            <h5> price : {price}</h5>
-            {price > 30000 && <p>"Discount of 5%"</p>}
+        <div className="Product">
+            <h4>{title}</h4>
+            <p>{description[index][0]}</p>
+            <p>{description[index][1]}</p>
+            <Price oldprice = {oldPrices[index]} newPrice = {newPrices[index]}></Price>
         </div>
     );
 
