@@ -1,10 +1,12 @@
 import Product from "./Product";
 function ProductTab() {
+    let options = ["hi-tech" , "durable" , "Fast"]; // array
+    let options2 = {a:"accurate" , b:"easy-to-use" , c: "flexible"}; //obj
     return (
         <>
-            <Product title = "Laptop" price = {30000} ></Product>
+            <Product title = "Laptop" price = {30000} features={options} features2 = {options2} ></Product>
             <Product title = "Mobile" price = {40000} ></Product>
-            <Product title = "TV"  ></Product>
+            <Product title = "TV" price={1}   ></Product>
         </>
     );
 }
