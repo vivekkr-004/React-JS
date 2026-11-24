@@ -1,6 +1,6 @@
 import Product from "./Product";
 function ProductTab() {
-    let options = [<li> "hi-tech" </li>,<li> "durable" </li> , <li> "fast" </li> ]; // array
+    let options = [ "hi-tech" , "durable"  ,  "fast"  ]; // array
 
     return (
         <>
